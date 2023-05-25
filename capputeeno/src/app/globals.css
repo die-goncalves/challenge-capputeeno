@@ -3,9 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-primary-rgb: 240, 240, 245;
+  
+  --input-background-rgb: 243, 245, 246;
+
+  --shape-light-rgb: 245, 245, 250;
+  --shape-gray-rgb: 233, 233, 240;
+
+  --brand-blue-rgb: 17, 93, 140;
+  --brand-orange-rgb: 242, 93, 39;
+  --brand-logo-rgb: 93, 93, 109;
+
+  --text-primary-rgb: 65, 65, 77; 
+  --text-secondary-rgb: 115, 115, 128;
+  --text-tertiary-rgb: 9, 9, 10;
+
+  --white: 255, 255, 255;
+  --red: 222, 56, 56;
+  --green-low: 220, 245, 221;
+  --green: 81, 184, 83;
+  --blue-low: 221, 233, 240;
+  --orange-low: 255, 165, 133;
+  --yellow: 239, 184, 102
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +36,6 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--text-primary-rgb));
+  background: rgb(var(--background-primary-rgb))
 }
