@@ -1,5 +1,5 @@
-import { Poltawski_Nowy } from 'next/font/google'
+import { Saira } from 'next/font/google'
 
-const poltawski_nowy = Poltawski_Nowy({ subsets: ['latin'] })
+const saira = Saira({ subsets: ['latin'] })
 
-export { poltawski_nowy }
+export { saira }

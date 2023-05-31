@@ -1,5 +1,5 @@
 import './globals.css'
-import { poltawski_nowy } from './fonts'
+import { saira } from './fonts'
 
 export const metadata = {
   title: 'Capputeeno',
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt" className={poltawski_nowy.className}>
+    <html lang="pt" className={saira.className}>
       <body>{children}</body>
     </html>
   )
