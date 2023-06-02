@@ -3,7 +3,7 @@ import './globals.css'
 import { Suspense } from 'react'
 import { Logo } from '@/components/logo'
 import { SearchBar } from '@/components/search-bar'
-import { BagIcon } from '@/components/icons/bag-icon'
+import { CartControl } from '@/components/cart-control'
 import { CartContextProvider } from '@/contexts/cart-context'
 import { saira } from './fonts'
 
@@ -28,7 +28,9 @@ export default function RootLayout({
                 <Suspense>
                   <SearchBar />
                 </Suspense>
-                <BagIcon className="stroke-[rgb(var(--text-secondary-rgb))] w-6 h-6" />
+                <Suspense>
+                  <CartControl />
+                </Suspense>
               </div>
             </nav>
           </header>
