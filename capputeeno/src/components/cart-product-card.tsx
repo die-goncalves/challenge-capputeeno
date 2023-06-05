@@ -45,7 +45,8 @@ export function CartProductCard(props: ICartProductCard) {
           <button
             onClick={handleDeleteProduct}
             className={clsx(
-              'rounded outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow'
+              'relative flex rounded-full w-[42px] h-[42px] items-center justify-center focus-within:bg-[rgb(var(--shape-light-rgb))] hover:bg-[rgb(var(--shape-light-rgb))] transition-[background-color]',
+              'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow'
             )}
           >
             <TrashIcon className="stroke-[rgb(var(--red))] w-6 h-6" />
