@@ -24,7 +24,13 @@ export function CartSummary() {
   const delivery = formatPrice(4000)
 
   return (
-    <div className="flex flex-col flex-1 bg-[rgb(var(--white))] mt-10 ml-8 h-[calc(100vh-120px)] sticky top-[120px] pt-4 px-6 pb-6">
+    <div
+      className={clsx(
+        'flex flex-col flex-1 bg-[rgb(var(--white))] h-[calc(100vh-120px)] sticky top-[120px]',
+        'my-10 p-4 rounded',
+        '3xl:mt-10 3xl:mb-0 3xl:ml-8 3xl:rounded-none 3xl:pt-4 3xl:px-6 3xl:pb-6'
+      )}
+    >
       <h1 className="text-xl font-semibold uppercase mb-7">Resumo do pedido</h1>
       <div className="flex justify-between items-center mb-3">
         <p>Subtotal de produtos</p>
@@ -47,11 +53,15 @@ export function CartSummary() {
           'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow'
         )}
       >
-        <span className="uppercase font-medium text-[rgb(var(--white))]">
+        <span
+          className={clsx('uppercase font-medium text-[rgb(var(--white))]')}
+        >
           Finalizar compra
         </span>
       </button>
-      <div className="flex flex-col gap-3 mt-auto uppercase">
+      <div
+        className={clsx('flex flex-col gap-3 mt-6 uppercase', '3xl:mt-auto')}
+      >
         <Link
           href="/help"
           className={clsx(

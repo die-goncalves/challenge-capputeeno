@@ -29,8 +29,18 @@ export function CartProductCard(props: ICartProductCard) {
   const range = Array.from({ length: 2 * amount }, (v, k) => (k + 1).toString())
   const priceFormatted = formatPrice(price)
   return (
-    <article className="flex w-full h-auto gap-8 bg-[rgb(var(--white))] rounded-lg overflow-hidden">
-      <div className="relative flex flex-none w-[256px] h-auto">
+    <article
+      className={clsx(
+        'flex flex-col w-full h-auto bg-[rgb(var(--white))] rounded-lg overflow-hidden',
+        '3xl:flex-row 3xl:gap-8'
+      )}
+    >
+      <div
+        className={clsx(
+          'relative flex flex-none w-full h-32',
+          '3xl:w-[256px] 3xl:h-auto'
+        )}
+      >
         <Image
           src={imageURL}
           alt={name}
@@ -39,13 +49,13 @@ export function CartProductCard(props: ICartProductCard) {
           sizes="(max-width: 768px) 70vw, (min-width: 769px) 30vw"
         />
       </div>
-      <div className="pt-4 pr-4 pb-6">
+      <div className={clsx('pt-2 px-4 pb-4', '3xl:pt-4 3xl:pr-4 3xl:pb-6')}>
         <header className="flex justify-between items-center">
           <h2 className="text-xl font-light">{name}</h2>
           <button
             onClick={handleDeleteProduct}
             className={clsx(
-              'relative flex rounded-full w-[42px] h-[42px] items-center justify-center focus-within:bg-[rgb(var(--shape-light-rgb))] hover:bg-[rgb(var(--shape-light-rgb))] transition-[background-color]',
+              'relative flex flex-none rounded-full w-[42px] h-[42px] items-center justify-center focus-within:bg-[rgb(var(--shape-light-rgb))] hover:bg-[rgb(var(--shape-light-rgb))] transition-[background-color]',
               'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow'
             )}
           >

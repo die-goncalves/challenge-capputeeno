@@ -8,7 +8,9 @@ export function Logo() {
       href={'/'}
       aria-label="Voltar para a página principal"
       className={clsx(
-        'text-[rgb(var(--brand-logo-rgb))] text-[40px] leading-[60px] font-normal rounded-lg outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
+        'mr-auto text-[rgb(var(--brand-logo-rgb))]  font-normal rounded-lg outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
+        'text-2xl grid-in-[up-left]',
+        '3xl:text-[40px] 3xl:leading-[60px] 3xl:grid-in-[logo]',
         saira_stencil_one.className
       )}
     >

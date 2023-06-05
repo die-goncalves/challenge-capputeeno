@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams } from 'next/navigation'
 import { SearchIcon } from './icons/search-icon'
 import { createUrl } from '@/utils/createUrl'
+import clsx from 'clsx'
 
 export function SearchBar() {
   const router = useRouter()
@@ -22,10 +23,18 @@ export function SearchBar() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form
+      className={clsx('grid-in-[bottom]', '3xl:grid-in-[search]')}
+      onSubmit={onSubmit}
+    >
       <label className="relative block">
         <input
-          className="w-96 rounded-lg pl-4 pr-12 py-2.5 bg-[rgb(var(--input-background-rgb))] text-sm leading-[22px] placeholder:text-[rgb(var(--text-secondary-rgb))] block border-none outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow"
+          className={clsx(
+            'rounded-lg pl-4 pr-12 py-2.5 bg-[rgb(var(--input-background-rgb))] text-sm leading-[22px] placeholder:text-[rgb(var(--text-secondary-rgb))] block border-none',
+            'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
+            'w-full',
+            '3xl:w-96'
+          )}
           name="search"
           placeholder="Procurando por algo específico?"
           defaultValue={searchValue ?? ''}

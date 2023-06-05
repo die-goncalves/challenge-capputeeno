@@ -6,6 +6,7 @@ import { Skeleton } from './skeleton'
 import { useCart } from '@/contexts/cart-context'
 import { ICartProduct } from '@/types/cart-product'
 import { formatPrice } from '@/utils/format-price'
+import clsx from 'clsx'
 
 let start = false
 export function CartProductGallery() {
@@ -30,13 +31,15 @@ export function CartProductGallery() {
   return (
     <>
       <div className="flex flex-col gap-2">
-        <p className="font-medium uppercase text-2xl">Seu carrinho</p>
+        <p className={clsx('font-medium uppercase text-lg', '3xl:text-2xl')}>
+          Seu carrinho
+        </p>
         <p className="font-light">
           Total ({amount} produtos){' '}
           <span className="font-semibold">{subTotalFormatted}</span>
         </p>
       </div>
-      <div className="flex flex-col gap-4 py-6">
+      <div className={clsx('flex flex-col gap-4 pt-6', '3xl:py-6')}>
         {!start ? (
           <>
             <Skeleton className="h-44 w-full" />

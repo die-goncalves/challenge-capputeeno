@@ -4,6 +4,7 @@ import { GoBack } from '@/components/go-back'
 import { formatPrice } from '@/utils/format-price'
 import { Collection, CollectionPTBR } from '@/types/collection'
 import { IProduct } from '@/types/product'
+import clsx from 'clsx'
 
 //  what happens when a dynamic segment is visited that was not generated with generateStaticParams.
 // This option replaces the fallback: true | false | blocking option of getStaticPaths in the pages directory.
@@ -70,11 +71,26 @@ export default async function Product({ params }: { params: { id: string } }) {
 
   const priceFormatted = formatPrice(product.price_in_cents)
   return (
-    <main className="w-full h-[calc(100vh-80px)] px-40">
+    <main
+      className={clsx(
+        'w-full px-4 h-[calc(100svh-108px)]',
+        '3xl:h-[calc(100svh-80px)] 3xl:px-40'
+      )}
+    >
       <GoBack />
 
-      <div className="grid grid-cols-[640px_1fr] gap-8 h-[calc(100vh-232px)]">
-        <div className="bg-indigo-500 relative w-[640px] h-full rounded overflow-hidden">
+      <div
+        className={clsx(
+          'flex flex-col gap-4',
+          '3xl:grid 3xl:grid-cols-[640px_1fr] 3xl:gap-8 3xl:h-[calc(100vh-232px)]'
+        )}
+      >
+        <div
+          className={clsx(
+            'relative w-full h-64 rounded overflow-hidden',
+            '3xl:h-full 3xl:w-[640px]'
+          )}
+        >
           <Image
             src={product.image_url}
             alt={product.name}
@@ -93,7 +109,7 @@ export default async function Product({ params }: { params: { id: string } }) {
             *Frete de R$40,00 para todo o Brasil. Grátis para compras acima de
             R$900,00.
           </span>
-          <div className="flex flex-col gap-2">
+          <div className={'flex flex-col gap-2'}>
             <span className="uppercase font-medium text-[rgb(var(--text-secondary-rgb))]">
               Descrição
             </span>
