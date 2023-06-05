@@ -7,8 +7,8 @@ import { useCart } from '@/contexts/cart-context'
 import { formatPrice } from '@/utils/format-price'
 
 export function CartSummary() {
-  const [subTotalFormatted, setSubTotalFormatted] = useState('')
-  const [totalFormatted, setTotalFormatted] = useState('')
+  const [subTotalFormatted, setSubTotalFormatted] = useState('R$ 0,00')
+  const [totalFormatted, setTotalFormatted] = useState('R$ 0,00')
   const [amount, setAmount] = useState(0)
   const { subTotal, amountProducts } = useCart()
 
@@ -16,9 +16,12 @@ export function CartSummary() {
     setSubTotalFormatted(formatPrice(subTotal))
     setTotalFormatted(formatPrice(subTotal + 4000))
   }, [subTotal])
+
   useEffect(() => {
     setAmount(amountProducts)
   }, [amountProducts])
+
+  const delivery = formatPrice(4000)
 
   return (
     <div className="flex flex-col flex-1 bg-[rgb(var(--white))] mt-10 ml-8 h-[calc(100vh-120px)] sticky top-[120px] pt-4 px-6 pb-6">
@@ -29,7 +32,7 @@ export function CartSummary() {
       </div>
       <div className="flex justify-between items-center mb-6">
         <p>Entrega</p>
-        <p>R$ 40</p>
+        <p>{delivery}</p>
       </div>
       <hr className="border-[1px] border-[rgb(var(--shape-gray-rgb))]" />
       <div className="flex font-semibold justify-between items-center mt-2 mb-10">

@@ -2,18 +2,21 @@
 
 import { useEffect, useState } from 'react'
 import { CartProductCard } from './cart-product-card'
+import { Skeleton } from './skeleton'
 import { useCart } from '@/contexts/cart-context'
 import { ICartProduct } from '@/types/cart-product'
 import { formatPrice } from '@/utils/format-price'
 
+let start = false
 export function CartProductGallery() {
   const [cart, setCart] = useState<ICartProduct[]>([])
   const [amount, setAmount] = useState(0)
-  const [subTotalFormatted, setSubTotalFormatted] = useState('')
+  const [subTotalFormatted, setSubTotalFormatted] = useState('R$ 0,00')
   const { cart: c, subTotal, amountProducts } = useCart()
 
   useEffect(() => {
     setCart(c)
+    start = true
   }, [c])
 
   useEffect(() => {
@@ -34,19 +37,26 @@ export function CartProductGallery() {
         </p>
       </div>
       <div className="flex flex-col gap-4 py-6">
-        {cart.map(product => {
-          return (
-            <CartProductCard
-              key={product.id}
-              id={product.id}
-              name={product.name}
-              description={product.description}
-              imageURL={product.image_url}
-              price={product.price_in_cents}
-              amount={product.amount}
-            />
-          )
-        })}
+        {!start ? (
+          <>
+            <Skeleton className="h-44 w-full" />
+            <Skeleton className="h-44 w-full" />
+          </>
+        ) : (
+          cart.map(product => {
+            return (
+              <CartProductCard
+                key={product.id}
+                id={product.id}
+                name={product.name}
+                description={product.description}
+                imageURL={product.image_url}
+                price={product.price_in_cents}
+                amount={product.amount}
+              />
+            )
+          })
+        )}
       </div>
     </>
   )
