@@ -33,6 +33,7 @@ export function CartProductCard(props: ICartProductCard) {
       className={clsx(
         'flex flex-col w-full h-auto bg-[rgb(var(--white))] rounded-lg overflow-hidden',
         'lg:flex-row',
+        'xl:gap-6',
         '3xl:gap-8'
       )}
     >
@@ -41,6 +42,7 @@ export function CartProductCard(props: ICartProductCard) {
           'relative flex flex-none w-full h-32',
           'sm:h-44',
           'lg:w-[192px] lg:h-auto',
+          'xl:w-[224px]',
           '3xl:w-[256px]'
         )}
       >
@@ -52,7 +54,9 @@ export function CartProductCard(props: ICartProductCard) {
           sizes="(max-width: 768px) 70vw, (min-width: 769px) 30vw"
         />
       </div>
-      <div className={clsx('pt-2 px-4 pb-4', 'lg:pt-4 lg:pr-4 lg:pb-6')}>
+      <div
+        className={clsx('pt-2 px-4 pb-4', 'lg:pt-4 lg:pr-4 lg:pb-6', 'xl:pl-0')}
+      >
         <header className="flex justify-between items-center">
           <h2 className="text-xl font-light">{name}</h2>
           <button

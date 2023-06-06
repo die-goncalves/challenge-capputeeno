@@ -19,6 +19,7 @@ export default function CartPage() {
             'flex flex-col w-full',
             'md:max-w-[336px]',
             'lg:max-w-[480px]',
+            'xl:max-w-[640px]',
             '3xl:max-w-[736px]'
           )}
         >
