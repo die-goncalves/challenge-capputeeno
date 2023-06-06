@@ -75,6 +75,7 @@ export default async function Product({ params }: { params: { id: string } }) {
       className={clsx(
         'w-full h-[calc(100svh-108px)] px-4',
         'sm:h-[calc(100svh-80px)] sm:px-8',
+        'lg:px-20',
         '3xl:px-40'
       )}
     >
@@ -84,14 +85,14 @@ export default async function Product({ params }: { params: { id: string } }) {
         className={clsx(
           'flex flex-col gap-4',
           'md:grid md:grid-cols-[1fr_1fr] md:gap-8 md:h-[calc(100svh-224px)]',
+          'lg:grid-cols-[1.25fr_1fr]',
           '3xl:grid-cols-[640px_1fr]'
         )}
       >
         <div
           className={clsx(
             'relative w-full h-64 rounded overflow-hidden',
-            'md:h-full',
-            '3xl:w-[640px]'
+            'md:h-full'
           )}
         >
           <Image

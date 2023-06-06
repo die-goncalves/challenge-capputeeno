@@ -34,7 +34,7 @@ export function SearchBar() {
             'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
             'w-full',
             'sm:w-72',
-            '3xl:w-96'
+            'lg:w-96'
           )}
           name="search"
           placeholder="Procurando por algo específico?"

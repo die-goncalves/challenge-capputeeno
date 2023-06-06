@@ -9,6 +9,7 @@ export default function CartPage() {
       className={clsx(
         'flex flex-col items-center justify-between px-4',
         'sm:px-8',
+        'lg:px-20',
         '3xl:px-40'
       )}
     >
@@ -17,6 +18,7 @@ export default function CartPage() {
           className={clsx(
             'flex flex-col w-full',
             'md:max-w-[336px]',
+            'lg:max-w-[480px]',
             '3xl:max-w-[736px]'
           )}
         >

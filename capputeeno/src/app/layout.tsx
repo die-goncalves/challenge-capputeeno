@@ -26,6 +26,7 @@ export default function RootLayout({
             className={clsx(
               'w-full px-4 bg-[rgba(var(--white))]/95 sticky top-0 z-10 backdrop-blur shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.1)]',
               'sm:px-8 sm:h-[80px]',
+              'lg:px-20',
               '3xl:px-40'
             )}
           >

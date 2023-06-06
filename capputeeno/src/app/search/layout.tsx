@@ -10,7 +10,12 @@ export default function SearchLayout({
 }) {
   return (
     <div
-      className={clsx('flex flex-col mt-8 mb-5 mx-4', 'sm:mx-8', '3xl:mx-40')}
+      className={clsx(
+        'flex flex-col mt-8 mb-5 px-4',
+        'sm:px-8',
+        'lg:px-20',
+        '3xl:px-40'
+      )}
     >
       <div
         className={clsx('grid grid-cols-[1fr,auto] grid-rows-1 items-start')}
