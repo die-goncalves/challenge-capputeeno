@@ -10,7 +10,8 @@ export function Logo() {
       className={clsx(
         'mr-auto text-[rgb(var(--brand-logo-rgb))]  font-normal rounded-lg outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
         'text-2xl grid-in-[up-left]',
-        '3xl:text-[40px] 3xl:leading-[60px] 3xl:grid-in-[logo]',
+        'sm:grid-in-[logo]',
+        '3xl:text-[40px] 3xl:leading-[60px]',
         saira_stencil_one.className
       )}
     >

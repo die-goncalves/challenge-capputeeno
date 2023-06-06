@@ -21,7 +21,7 @@ export function CartControl() {
         'relative flex rounded-full w-[42px] h-[42px] items-center justify-center focus-within:bg-[rgb(var(--shape-light-rgb))] hover:bg-[rgb(var(--shape-light-rgb))] transition-colors',
         'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
         'grid-in-[up-right]',
-        '3xl:grid-in-[cart]'
+        'sm:grid-in-[cart]'
       )}
     >
       <div className="relative">

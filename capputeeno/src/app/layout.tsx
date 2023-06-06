@@ -25,13 +25,14 @@ export default function RootLayout({
           <header
             className={clsx(
               'w-full px-4 bg-[rgba(var(--white))]/95 sticky top-0 z-10 backdrop-blur shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.1)]',
-              '3xl:px-40 3xl:h-[80px]'
+              'sm:px-8 sm:h-[80px]',
+              '3xl:px-40'
             )}
           >
             <nav
               className={clsx(
                 'grid grid-cols-[1fr_auto] grid-rows-2 gap-2 py-2 grid-areas-[up-left_up-right,bottom_bottom] w-full h-full justify-between items-center',
-                '3xl:grid-cols-[1fr_auto_auto] 3xl:grid-rows-1 3xl:gap-4 3xl:grid-areas-[logo_search_cart]'
+                'sm:grid-cols-[1fr_auto_auto] sm:grid-rows-1 sm:gap-4 sm:grid-areas-[logo_search_cart]'
               )}
             >
               <Logo />

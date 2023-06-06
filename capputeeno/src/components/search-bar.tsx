@@ -24,7 +24,7 @@ export function SearchBar() {
 
   return (
     <form
-      className={clsx('grid-in-[bottom]', '3xl:grid-in-[search]')}
+      className={clsx('grid-in-[bottom]', 'sm:grid-in-[search]')}
       onSubmit={onSubmit}
     >
       <label className="relative block">
@@ -33,6 +33,7 @@ export function SearchBar() {
             'rounded-lg pl-4 pr-12 py-2.5 bg-[rgb(var(--input-background-rgb))] text-sm leading-[22px] placeholder:text-[rgb(var(--text-secondary-rgb))] block border-none',
             'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
             'w-full',
+            'sm:w-72',
             '3xl:w-96'
           )}
           name="search"

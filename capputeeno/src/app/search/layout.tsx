@@ -9,7 +9,9 @@ export default function SearchLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className={clsx('flex flex-col mt-8 mb-5 mx-4', '3xl:mx-40')}>
+    <div
+      className={clsx('flex flex-col mt-8 mb-5 mx-4', 'sm:mx-8', '3xl:mx-40')}
+    >
       <div
         className={clsx('grid grid-cols-[1fr,auto] grid-rows-1 items-start')}
       >

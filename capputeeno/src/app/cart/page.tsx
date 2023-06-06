@@ -7,8 +7,9 @@ export default function CartPage() {
   return (
     <main
       className={clsx(
-        'flex flex-col items-center justify-between mx-4',
-        '3xl:mx-40'
+        'flex flex-col items-center justify-between px-4',
+        'sm:px-8',
+        '3xl:px-40'
       )}
     >
       <div className={clsx('flex w-full flex-col', '3xl:flex-row')}>

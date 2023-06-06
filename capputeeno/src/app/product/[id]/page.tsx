@@ -73,8 +73,9 @@ export default async function Product({ params }: { params: { id: string } }) {
   return (
     <main
       className={clsx(
-        'w-full px-4 h-[calc(100svh-108px)]',
-        '3xl:h-[calc(100svh-80px)] 3xl:px-40'
+        'w-full h-[calc(100svh-108px)] px-4',
+        'sm:h-[calc(100svh-80px)] sm:px-8',
+        '3xl:px-40'
       )}
     >
       <GoBack />

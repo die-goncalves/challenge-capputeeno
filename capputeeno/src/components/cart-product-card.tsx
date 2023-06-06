@@ -38,6 +38,7 @@ export function CartProductCard(props: ICartProductCard) {
       <div
         className={clsx(
           'relative flex flex-none w-full h-32',
+          'sm:h-44',
           '3xl:w-[256px] 3xl:h-auto'
         )}
       >

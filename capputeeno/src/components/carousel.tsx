@@ -24,7 +24,7 @@ function Thumb({ imgSrc, name, onClick, selected }: IThumb) {
       )}
     >
       <button onClick={onClick} className="" type="button">
-        <div className="w-full h-12">
+        <div className={clsx('w-full h-12', 'sm:h-14')}>
           <Image
             src={imgSrc}
             alt={name}
@@ -72,7 +72,12 @@ export function Carousel({ slides, options }: ICarousel) {
   }, [emblaMainApi, onSelect])
 
   return (
-    <section className="flex flex-col h-[calc(100svh-108px)] p-4">
+    <section
+      className={clsx(
+        'flex flex-col h-[calc(100svh-108px)] p-4',
+        'sm:h-[calc(100svh-80px)] sm:px-8'
+      )}
+    >
       <div className="flex h-full overflow-hidden" ref={emblaMainRef}>
         <div className="flex -ml-4 flex-1">
           {slides.map(p => (
@@ -85,10 +90,15 @@ export function Carousel({ slides, options }: ICarousel) {
                   className="object-cover"
                   sizes="(max-width: 768px) 70vw, (min-width: 769px) 100vw"
                 />
-                <div className="absolute flex flex-col rounded z-10 bg-black/25 backdrop-blur left-2 right-2 bottom-2 p-2">
+                <div
+                  className={clsx(
+                    'absolute flex flex-col rounded z-10 bg-black/25 backdrop-blur left-2 right-2 bottom-2 p-2',
+                    'sm:right-1/2'
+                  )}
+                >
                   <h2
                     className={clsx(
-                      'font-medium text-lg text-[rgb(var(--white))]',
+                      'font-medium text-lg text-[rgb(var(--white))] line-clamp-1',
                       saira_stencil_one.className
                     )}
                   >
