@@ -34,7 +34,7 @@ export function CartProductCard(props: ICartProductCard) {
         'flex flex-col w-full h-auto bg-[rgb(var(--white))] rounded-lg overflow-hidden',
         'lg:flex-row',
         'xl:gap-6',
-        '3xl:gap-8'
+        '2xl:gap-8'
       )}
     >
       <div
@@ -43,7 +43,7 @@ export function CartProductCard(props: ICartProductCard) {
           'sm:h-44',
           'lg:w-[192px] lg:h-auto',
           'xl:w-[224px]',
-          '3xl:w-[256px]'
+          '2xl:w-[256px]'
         )}
       >
         <Image

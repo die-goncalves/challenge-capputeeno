@@ -10,7 +10,7 @@ export default function CartPage() {
         'flex flex-col items-center justify-between px-4',
         'sm:px-8',
         'lg:px-20',
-        '3xl:px-40'
+        '2xl:px-40'
       )}
     >
       <div className={clsx('flex w-full flex-col', 'md:flex-row')}>

@@ -50,7 +50,7 @@ export function Presentation({ products }: IPresentation) {
                     <p
                       className={clsx(
                         'text-sm text-[rgba(var(--white))]/80 line-clamp-2',
-                        '3xl:line-clamp-3'
+                        '2xl:line-clamp-3'
                       )}
                     >
                       {p.description}

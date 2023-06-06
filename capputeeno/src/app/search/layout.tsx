@@ -14,7 +14,7 @@ export default function SearchLayout({
         'flex flex-col mt-8 mb-5 px-4',
         'sm:px-8',
         'lg:px-20',
-        '3xl:px-40'
+        '2xl:px-40'
       )}
     >
       <div
