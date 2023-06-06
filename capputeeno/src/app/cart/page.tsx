@@ -12,8 +12,14 @@ export default function CartPage() {
         '3xl:px-40'
       )}
     >
-      <div className={clsx('flex w-full flex-col', '3xl:flex-row')}>
-        <div className="flex flex-col w-full max-w-[736px]">
+      <div className={clsx('flex w-full flex-col', 'md:flex-row')}>
+        <div
+          className={clsx(
+            'flex flex-col w-full',
+            'md:max-w-[336px]',
+            '3xl:max-w-[736px]'
+          )}
+        >
           <GoBack />
 
           <CartProductGallery />

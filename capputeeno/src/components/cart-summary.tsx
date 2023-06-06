@@ -28,7 +28,7 @@ export function CartSummary() {
       className={clsx(
         'flex flex-col flex-1 bg-[rgb(var(--white))] h-[calc(100vh-120px)] sticky top-[120px]',
         'my-10 p-4 rounded',
-        '3xl:mt-10 3xl:mb-0 3xl:ml-8 3xl:rounded-none 3xl:pt-4 3xl:px-6 3xl:pb-6'
+        'md:ml-8 md:mb-0 md:rounded-none md:pt-4 md:px-6 md:pb-6'
       )}
     >
       <h1 className="text-xl font-semibold uppercase mb-7">Resumo do pedido</h1>
@@ -59,9 +59,7 @@ export function CartSummary() {
           Finalizar compra
         </span>
       </button>
-      <div
-        className={clsx('flex flex-col gap-3 mt-6 uppercase', '3xl:mt-auto')}
-      >
+      <div className={clsx('flex flex-col gap-3 mt-6 uppercase', 'md:mt-auto')}>
         <Link
           href="/help"
           className={clsx(

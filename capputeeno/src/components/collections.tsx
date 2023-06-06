@@ -33,7 +33,7 @@ export default function Collections() {
 
   return (
     <nav>
-      <ul className={clsx('flex flex-col gap-2')}>
+      <ul className={clsx('flex flex-col gap-2', 'md:flex-row md:gap-4')}>
         {collections.map(c => {
           return (
             <li key={c}>

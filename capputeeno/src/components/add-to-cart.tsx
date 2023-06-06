@@ -37,7 +37,7 @@ export function AddToCart(props: IAddToCart) {
         'flex items-center justify-center gap-3 w-full h-11 bg-[rgb(var(--brand-blue-rgb))] rounded',
         'outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow',
         'my-4',
-        '3xl:py-0 3xl:mt-auto 3xl:mb-0'
+        'md:mt-auto md:mb-0'
       )}
     >
       <BagIcon className="stroke-[rgb(var(--shape-light-rgb))] w-6 h-6" />

@@ -93,7 +93,8 @@ export function Carousel({ slides, options }: ICarousel) {
                 <div
                   className={clsx(
                     'absolute flex flex-col rounded z-10 bg-black/25 backdrop-blur left-2 right-2 bottom-2 p-2',
-                    'sm:right-1/2'
+                    'sm:right-1/2',
+                    'md:right-1/3'
                   )}
                 >
                   <h2

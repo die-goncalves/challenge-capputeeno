@@ -83,13 +83,15 @@ export default async function Product({ params }: { params: { id: string } }) {
       <div
         className={clsx(
           'flex flex-col gap-4',
-          '3xl:grid 3xl:grid-cols-[640px_1fr] 3xl:gap-8 3xl:h-[calc(100vh-232px)]'
+          'md:grid md:grid-cols-[1fr_1fr] md:gap-8 md:h-[calc(100svh-224px)]',
+          '3xl:grid-cols-[640px_1fr]'
         )}
       >
         <div
           className={clsx(
             'relative w-full h-64 rounded overflow-hidden',
-            '3xl:h-full 3xl:w-[640px]'
+            'md:h-full',
+            '3xl:w-[640px]'
           )}
         >
           <Image

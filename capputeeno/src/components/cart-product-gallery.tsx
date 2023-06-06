@@ -39,7 +39,7 @@ export function CartProductGallery() {
           <span className="font-semibold">{subTotalFormatted}</span>
         </p>
       </div>
-      <div className={clsx('flex flex-col gap-4 pt-6', '3xl:py-6')}>
+      <div className={clsx('flex flex-col gap-4 pt-6', 'md:py-6')}>
         {!start ? (
           <>
             <Skeleton className="h-44 w-full" />
