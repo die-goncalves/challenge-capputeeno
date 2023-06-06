@@ -27,7 +27,8 @@ export default function RootLayout({
               'w-full px-4 bg-[rgba(var(--white))]/95 sticky top-0 z-10 backdrop-blur shadow-[0px_4px_12px_0px_rgba(0,_0,_0,_0.1)]',
               'sm:px-8 sm:h-[80px]',
               'lg:px-20',
-              '2xl:px-40'
+              '2xl:px-40',
+              '3xl:max-w-[1440px] 3xl:mx-auto'
             )}
           >
             <nav

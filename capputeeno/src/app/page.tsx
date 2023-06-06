@@ -35,7 +35,7 @@ export default async function HomePage() {
   const { products } = await getBestProducts()
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col 3xl:max-w-[1440px] 3xl:mx-auto">
       <Presentation products={products} />
     </main>
   )
