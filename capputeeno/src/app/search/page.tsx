@@ -113,7 +113,7 @@ export default async function SearchPage({
         </Suspense>
       </div>
 
-      <div className="max-w-full grid grid-cols-[repeat(auto-fill,_minmax(256px,auto))] gap-y-8 gap-x-6">
+      <div className="w-full grid grid-cols-[repeat(auto-fill,_minmax(256px,auto))] gap-y-8 gap-x-6">
         {products.list.map(p => {
           return (
             <ProductCard

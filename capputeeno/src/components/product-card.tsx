@@ -15,9 +15,9 @@ export function ProductCard(props: IProductCard) {
   return (
     <Link
       href={`/product/${props.id}`}
-      className="w-fit rounded-b rounded-t-lg overflow-hidden bg-[rgba(var(--white))]/40 border-none outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow"
+      className="w-full rounded-b rounded-t-lg overflow-hidden bg-[rgba(var(--white))]/40 border-none outline-none focus:ring-2 focus:ring-[rgb(var(--orange-low))] transition-shadow"
     >
-      <div className="relative w-[256px] h-[300px]">
+      <div className="relative w-full h-[300px]">
         <Image
           src={props.imageURL}
           alt={props.name}
