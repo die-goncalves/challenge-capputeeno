@@ -126,7 +126,10 @@ Para o desenvolvimento do projeto o desafio conta com um [protótipo](https://ww
 
 📽️ Se os vídeos não funcionarem há imagens de alguns quadros dos vídeos logo abaixo.
 
-***Colocar os videos aqui***
+https://github.com/die-goncalves/challenge-capputeeno/assets/67720230/07ad36c8-3009-413f-bb5e-85ae7be76a1d
+
+https://github.com/die-goncalves/challenge-capputeeno/assets/67720230/b6ae9481-5d8a-4d1c-b0c1-fa82a9192a88
+
 
 <details closed>
   <summary>🖼️ Imagens</summary>
