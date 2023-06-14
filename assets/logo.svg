@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="34.766243mm"
+   height="6.1832504mm"
+   viewBox="0 0 34.766243 6.1832505"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.8649832"
+     inkscape:cx="-16.230462"
+     inkscape:cy="-49.738512"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2">
+    <filter
+       id="filter0_d_1_2"
+       x="56.535999"
+       y="15.0081"
+       width="125.938"
+       height="19.184"
+       filterUnits="userSpaceOnUse"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood2175" />
+      <feColorMatrix
+         in="SourceAlpha"
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+         result="hardAlpha"
+         id="feColorMatrix2177" />
+      <feOffset
+         dy="1"
+         id="feOffset2179" />
+      <feGaussianBlur
+         stdDeviation="0.5"
+         id="feGaussianBlur2181" />
+      <feComposite
+         in2="hardAlpha"
+         operator="out"
+         id="feComposite2183" />
+      <feColorMatrix
+         type="matrix"
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+         id="feColorMatrix2185" />
+      <feBlend
+         mode="normal"
+         in2="BackgroundImageFix"
+         result="effect1_dropShadow_1_2"
+         id="feBlend2187" />
+      <feBlend
+         mode="normal"
+         in="SourceGraphic"
+         in2="effect1_dropShadow_1_2"
+         result="shape"
+         id="feBlend2189" />
+    </filter>
+  </defs>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Saira Stencil One';-inkscape-font-specification:'Saira Stencil One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5d5d6d;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:7.6;paint-order:markers stroke fill"
+     x="-0.29844999"
+     y="4.4196"
+     id="text236"><tspan
+       sodipodi:role="line"
+       id="tspan234"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Saira Stencil One';-inkscape-font-specification:'Saira Stencil One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5d5d6d;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+       x="-0.29844999"
+       y="4.4196">Capputeeno</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Saira Stencil One';-inkscape-font-specification:'Saira Stencil One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5d5d6d;fill-opacity:0.203252;stroke:none;stroke-width:0;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:7.6;paint-order:markers stroke fill"
+     x="-0.29844999"
+     y="4.9196005"
+     id="text236-5"><tspan
+       sodipodi:role="line"
+       id="tspan234-8"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:'Saira Stencil One';-inkscape-font-specification:'Saira Stencil One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5d5d6d;fill-opacity:0.203252;stroke:none;stroke-width:0;stroke-dasharray:none"
+       x="-0.29844999"
+       y="4.9196005">Capputeeno</tspan></text>
+</svg>
